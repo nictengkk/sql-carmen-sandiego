@@ -17,8 +17,11 @@ We're going to use what we've learned already about searching with SQL commands,
 - From the command line, let's create a new database called `carmen` and populate it with the SQL found in `world.sql`
 
 ```
+# go to directory
+cd starter-code
+
 # Enter psql
-psql
+psql -U postgres
 
 # Create database
 CREATE DATABASE carmen;
@@ -26,12 +29,6 @@ CREATE DATABASE carmen;
 # Connect to carmen
 \c carmen
 \i world.SQL
-```
-
-**Pro Tip:** You can do this in one step with the command:
-
-```bash
-psql -d carmen -f /your/path/to/this/file/starter-code/world.sql
 ```
 
 Then, use the clues below to create the appropriate SQL queries to help you find Carmen and then, tell us where she's heading!!
